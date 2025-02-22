@@ -1,4 +1,5 @@
 import './App.css'
+import Navbar from './components/navbar/Navbar'
 
 function App() {
   let cardInfo = {
@@ -11,12 +12,8 @@ function App() {
 
   return (
     <>
-      <div className="card">
-        <img src={cardInfo.image} alt="" />
-        <h4>{cardInfo.firstName}</h4>
-        <h5>{cardInfo.lastName}</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nostrum?</p>
-      </div>
+    <Navbar/>
+    <Card info={cardInfo}/>
     </>
   )
 }
